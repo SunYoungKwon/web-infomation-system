@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/check.js" charset="UTF-8"></script>
+	<title>사칙연산</title>
+</head>
+<body>
+	<div class="content-box">
+		<h1 class="title">계산기</h1>
+
+		<form action="doCalcul" method="POST">
+		<fieldset class="content">
+			<input type="number" name="num1" class="number" placeholder="정수입력" required>
+			
+			<select name="sign" id="sign" size="1" class="sign" onchange="check()">
+				<option value="sum">+</option>
+				<option value="sub">-</option>
+				<option value="mul">*</option>
+				<option value="div">/</option>
+			</select>
+	
+			<input type="number" name="num2" id="num2" class="number" placeholder="정수입력" onchange="check()" required><br>
+			
+			<p id="msg" class="errormsg">0으로 나눌 수 없습니다!<br>다시 입력해 주세요.</p>
+			
+			<div class="center">
+				<input type="submit" value="결과보기" class="btn-submit btn">
+			</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
