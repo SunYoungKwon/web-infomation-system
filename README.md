@@ -2,7 +2,7 @@
 
 ## :closed_book: 두 정수 사칙연산
 ### 주제 : 입력받은 두 정수를 선택된 사칙연산(+, -, *, /)으로 계산한 결과를 출력하기
-![HW3 실행예시](https://github.com/tunaep5/web-infomation-system/blob/master/Image/hw3.JPG)
+![사칙연산 실행예시](https://github.com/tunaep5/web-infomation-system/blob/master/Image/hw3.JPG)
 
 ### 기능
   - 입력받은 값이 정수가 맞는지 확인
@@ -13,7 +13,8 @@
 ## :orange_book: 회원가입 & 로그인
 ### 주제 : 회원가입과 로그인 기능 구현하기
 - 아이디는 e-mail로 받음
-
+![Join 실행예시](https://github.com/tunaep5/web-infomation-system/blob/master/Image/Join.JPG)
+![Login 실행예시](https://github.com/tunaep5/web-infomation-system/blob/master/Image/Login.JPG)
 ### 기능
   #### 회원가입
   - 필수입력, 선택입력 구분
