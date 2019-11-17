@@ -34,6 +34,18 @@ emailInput.addEventListener("change", function(event){
 	}
 });
 
+// 이메일 형식 확인
+function checkEmailForm(str) {                                                 
+     var emailForm = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+
+     if(!emailForm.test(str)) {                            
+          return false;         
+     }                            
+     else {                       
+          return true;         
+     }                            
+}
+
 // 아이디(email) 중복확인
 function checkEmail() {
     var email = document.getElementById("email").value;
@@ -45,7 +57,7 @@ function checkEmail() {
     }
     
     // 이메일 형식 확인
-    if (email !== '/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i') {
+    if (!checkEmailForm(email)) {
     	document.getElementById("check_email_m").innerHTML = '유효한 이메일주소가 아닙니다.';
     	return false;
     }
