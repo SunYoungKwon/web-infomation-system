@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Noto+Sans+KR:300,400,700&display=swap&subset=korean');
+
+/* general */
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	z-index: 5;
+	position: fixed;
+	top: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+form > h3 {
+	margin: 10px 15px;
+}
+
+label {
+	margin-top: 15px;
+}
+
+button {
+	padding: 0;
+}
+
+.page-max-w {
+	max-width: 2000px;
+	height: inherit;
+	margin: 0 auto;
+}
+
+#logo {
+	color: white;
+	font-family: 'DM Serif Display', serif;
+	letter-spacing: 0.03em;
+}
+
+.bg-deep-green {
+	background-color: #00413b;
+}
+
+.w-45 {
+	width: 45%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-90 {
+	width: 90%;	
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.form {
+	margin: 80px auto;
+	width: 600px;
+}
+
+#email{
+	width: 80%;
+	display: inline-block;
+}
+
+#check_email{
+	padding: 8px;
+	transform: translateY(-2px);
+	display: inline-block;
+	width: 18%;
+	vertical-align: center;
+}
+
+.msg {
+	color: #aaa;
+	font-size: 15px;
+	margin: 3px 0 20px 2px;	
+	height: 15px;
+}
+
+.form-input {
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* Mobile*/
+@media only screen and (max-width: 650px) {
+	.form {
+		width: 100%;
+		margin-top: 70px; 
+		padding: 0 15px;
+	}
+	
+	.form-input{
+		width: 100%;
+	}
+}
+
